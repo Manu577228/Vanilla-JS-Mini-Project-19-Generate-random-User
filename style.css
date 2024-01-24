@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --primary-color: #8e44ad;
+  --secondary-color: #2c3e50;
+  --text-color: #333;
+  --bg-gradient: linear-gradient(to right, #8e44ad, #2c3e50);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: var(--bg-gradient);
+  color: #fff;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  background: var(--bg-gradient);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px;
+  box-sizing: border-box;
+}
+
+.card-head {
+  background: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.card-head a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.card-head a:hover {
+  background-color: #34495e;
+}
+
+.user-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.card-body {
+  padding: 10px 20px;
+}
+
+.user-post-address,
+.user-location-address {
+  margin: 10px 0;
+}
+
+.user-post-address div,
+.user-location-address span {
+  margin-bottom: 5px;
+}
+
+.user-name {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.user-name-title {
+  font-weight: 900;
+}
+
+.user-name-full {
+  font-weight: 600;
+}
+
+.user-age {
+  color: #fff;
+}
+
+.user-contact-info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.user-contact-info span {
+  text-align: center;
+}
+
+#generate-btn {
+  background: linear-gradient(to right, #8e44ad, #2c3e50);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  margin-top: 10px;
+}
+
+#generate-btn:hover {
+  background: linear-gradient(to right, #9b59b6, #34495e);
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    max-width: 100%;
+  }
+}
